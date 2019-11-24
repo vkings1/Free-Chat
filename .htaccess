@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
+
+#This line use for shorturl
+#RewriteRule ^([-@a-z0-9A-Z_']+)?$ verify.php [QSA,L]
+
+
+ErrorDocument 404 /page-not-found.php

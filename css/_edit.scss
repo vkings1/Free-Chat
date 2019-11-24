@@ -1,0 +1,193 @@
+.img-body{
+    text-align: center;
+    // border: 1px solid #fff;
+    // width: 260px;
+    // height: 250px;
+    // box-shadow: 0 0 0 1px rgba(0,0,0,.15);
+    // background-color: #fff;
+    // background-clip: padding-box;
+    // border-radius: 2px;
+    // padding: 16px;
+    // transition: box-shadow 83ms;
+    .edit-photo{
+        position: relative;
+        bottom: 90px;
+    }
+    #photo-banner{
+        height: 120px;
+        width: 320px;
+    }
+    #old-img{
+        width: 130px;
+        height: 130px;
+        box-sizing: border-box;
+        background-clip: content-box;
+        border: 3px solid #fff;
+        border-radius: 49.9%;
+        margin: 20px 0 0 50px;
+        box-shadow: 0 0 0 1px rgba(0,0,0,.15);
+    }
+    
+    label {
+        width: 29px;
+        height: 29px;
+        background:#fff;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+        border-radius: 50%;
+        position: relative;
+        right: 35px;
+        bottom: 120px;
+        .fa-pencil{
+            font-size: 16px;
+            color:#a4a4a4;
+            cursor: pointer;
+            margin-left: 1px;
+        }
+        &:hover {
+            background: #f1f1f1;
+            border-color: #d6d6d6;
+        }
+    }
+    input {
+        display: none;
+    }
+}
+.edit{
+    font-size: 18px;
+    padding: 40px 10px 20px 18px;
+    display: block;
+    background: #fafafa;
+    color: #636363;
+    width: 100%;
+    border: 1px solid #636363; 
+    margin: 0;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+.edit-usernames {
+    color: #636363; 
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    position: absolute;
+    left: 29px;
+    top: 7px;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.edit-age {
+    color: #636363; 
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    position: absolute;
+    left: 29px;
+    top: 7px;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.edit-gender {
+    color: #636363; 
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    position: absolute;
+    left: 29px;
+    top: 7px;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.edit-country {
+    color: #636363; 
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    position: absolute;
+    left: 29px;
+    top: 7px;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.edit-state {
+    color: #636363; 
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    position: absolute;
+    left: 29px;
+    top: 7px;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.edit-password {
+    color: #636363; 
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    position: absolute;
+    left: 29px;
+    top: 7px;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.edit-email {
+    color: #636363; 
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    position: absolute;
+    left: 29px;
+    top: 7px;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.form-control:focus ~ .edit-usernames, .form-control.used ~ .edit-usernames {
+    top: 3px;
+    transform: scale(.75); 
+    left: 19px;
+    color: #4a89dc;
+}
+.form-control:focus ~ .edit-age, .form-control.used ~ .edit-age {
+    top: 3px;
+    transform: scale(.75); 
+    left: 27px;
+    color: #4a89dc;
+}
+.form-control:focus ~ .edit-gender, .form-control.used ~ .edit-gender {
+    top: 3px;
+    transform: scale(.75); 
+    left: 22px;
+    color: #4a89dc;
+}
+
+.form-control:focus ~ .edit-country, .form-control.used ~ .edit-country {
+    top: 3px;
+    transform: scale(.75); 
+    left: 22px;
+    color: #4a89dc;
+}
+.form-control:focus ~ .edit-state, .form-control.used ~ .edit-state {
+    top: 3px;
+    transform: scale(.75); 
+    left: 22px;
+    color: #4a89dc;
+}
+.form-control:focus ~ .edit-password, .form-control.used ~ .edit-password {
+    top: 3px;
+    transform: scale(.75); 
+    left: 22px;
+    color: #4a89dc;
+}
+.form-control:focus ~ .edit-email, .form-control.used ~ .edit-email {
+    top: 3px;
+    transform: scale(.75); 
+    left: 22px;
+    color: #4a89dc;
+}
+.update-success{
+    border: 1px solid #0069d9;
+max-width: 290px;
+}

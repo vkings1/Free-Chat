@@ -1,0 +1,347 @@
+.left-info{
+    .reg-heading {
+        text-align: center;
+        margin: 10px;
+        text-align: center;
+        font-size: 35px;
+        padding: 20px 0 0 0;
+    }
+    .reg-paragraph{
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 25px;
+    }
+    .reg-2-pag{
+        text-align: center;
+    }
+    .reg-3-pag{
+        text-align: center;
+    }
+}
+
+.heading-reg{
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+}
+
+.reg-usernames {
+    color: #636363; 
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    left: 20px;
+    top: 18px;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.reg-email {
+    color: #636363; 
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    left: 20px;
+    top: 16px;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.text-muted{
+    padding-top: 2px;
+    font-size: 15px;
+}
+.reg-pass {
+    color: #636363; 
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    left: 20px;
+    top: 16px;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.form-control:focus ~ .reg-usernames, .form-control.used ~ .reg-usernames {
+    top: -1px;
+    transform: scale(.75); 
+    left: -5px;
+    color: #4a89dc;
+}
+.form-control:focus ~ .reg-email, .form-control.used ~ .reg-email {
+    top: -1px;
+    transform: scale(.75); 
+    left: -5px;
+    color: #4a89dc;
+}
+.form-control:focus ~ .reg-pass, .form-control.used ~ .reg-pass {
+    top: -1px;
+    transform: scale(.75); 
+    left: -5px;
+    color: #4a89dc;
+}
+
+/* select male female stylings ------------------------------*/
+.male-female {
+    position: relative;
+    width: 350px;   
+ }
+.gender {
+    color: #636363; 
+    position: relative;
+    width: 499px;
+    padding: 25px 5px 5px 15px;
+    font-size: 18px;
+    border-radius: 3px;
+    border: 1px solid #000;
+    cursor: pointer;
+    
+}
+  /* Remove focus */
+.gender:focus {
+    outline: none;
+    border-bottom: 1px solid rgba(0,0,0, 0);
+}
+  
+/* Use custom arrow */
+.male-female .gender {
+    appearance: none;
+}
+  
+.male-female:after {
+    position: absolute;
+    top: 29px;
+    right: -125px;
+    /* Styling the down arrow */
+    width: 0;
+    height: 0;
+    padding: 0;
+    content: '';
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid rgba(0, 0, 0, 0.12);
+    pointer-events: none;
+}
+/* LABEL ======================================= */
+.select-label {
+    color: #636363; 
+    font-size: 18px;
+    position: absolute;
+    pointer-events: none;
+    left: 18px;
+    top: 17px;
+    transition: 0.2s ease all;
+}
+  
+/* active state */
+.gender:focus ~ .select-label, .gender:valid ~ .select-label {
+    color: #4a89dc;
+    left: 5px;
+    top: 1px;
+    transition: 0.2s ease all;
+    font-size: 14px;
+} 
+/* active state */
+.gender:focus ~ .select-bar:before, .gender:focus ~ .select-bar:after {
+    width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.select-highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+
+/* select Age stylings ------------------------------*/
+.select-age {
+    position: relative;
+    width: 350px;
+ }
+.ages{
+    color: #636363; 
+    position: relative;
+    width: 499px;
+    padding: 25px 5px 5px 15px;
+    font-size: 18px;
+    border-radius: 3px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+  /* Remove focus */
+.ages:focus {
+    outline: none;
+    border-bottom: 1px solid rgba(0,0,0, 0);
+}
+  
+/* Use custom arrow */
+.select-age .ages {
+    appearance: none;
+}
+  
+.select-age:after {
+    position: absolute;
+    top: 29px;
+    right: -125px;
+    /* Styling the down arrow */
+    width: 0;
+    height: 0;
+    padding: 0;
+    content: '';
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid rgba(0, 0, 0, 0.12);
+    pointer-events: none;
+}
+  
+/* active state */
+.ages:focus ~ .select-label, .ages:valid ~ .select-label {
+    color: #4a89dc;
+    left: 5px;
+    top: 1px;   
+    transition: 0.2s ease all;
+    font-size: 14px;
+}  
+/* active state */
+.ages:focus ~ .select-bar:before, .ages:focus ~ .select-bar:after {
+    width: 50%;
+}
+
+/* select country stylings ------------------------------*/
+.select-country {
+    position: relative;
+    width: 350px;
+ }
+#country{
+    color: #636363; 
+    position: relative;
+    width: 499px;
+    padding: 25px 5px 5px 15px;
+    font-size: 18px;
+    border-radius: 3px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+  /* Remove focus */
+#country:focus {
+    outline: none;
+    border-bottom: 1px solid rgba(0,0,0, 0);
+}
+  
+/* Use custom arrow */
+.select-country #country {
+    appearance: none;
+}
+  
+.select-country:after {
+    position: absolute;
+    top: 29px;
+    right: -125px;
+    /* Styling the down arrow */
+    width: 0;
+    height: 0;
+    padding: 0;
+    content: '';
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid rgba(0, 0, 0, 0.12);
+    pointer-events: none;
+}
+/* active state */
+#country:focus ~ .select-label, #country:valid ~ .select-label {
+    color: #4a89dc;
+    left: 5px;
+    top: 1px;
+    transition: 0.2s ease all;
+    font-size: 14px;
+}
+/* active state */
+#country:focus ~ .select-bar:before, #country:focus ~ .select-bar:after {
+    width: 50%;
+}
+/* select City stylings ------------------------------*/
+.select-city{
+    position: relative;
+    width: 350px;
+ }
+.city{  
+    color: #636363; 
+    position: relative;
+    width: 499px;
+    padding: 25px 5px 5px 15px;
+    font-size: 18px;
+    border-radius: 3px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+  /* Remove focus */
+.city:focus {
+    outline: none;
+    border-bottom: 1px solid rgba(0,0,0, 0);
+}
+  
+/* Use custom arrow */
+.select-city .city {
+    appearance: none;
+}
+  
+.select-city:after {
+    position: absolute;
+    top: 18px;
+    right: -125px;
+    /* Styling the down arrow */
+    width: 0;
+    height: 0;
+    padding: 0;
+    content: '';
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid rgba(0, 0, 0, 0.12);
+    pointer-events: none;
+}
+/* active state */
+.city:focus ~ .select-label, .city:valid ~ .select-label {
+    color: #4a89dc;
+    left: 5px;
+    top: 1px;
+    transition: 0.2s ease all;
+    font-size: 14px;
+}
+  
+// /* BOTTOM BARS ================================= */
+.select-bar {
+    position: relative;
+    display: block;
+    width: 499px;
+}
+  
+.select-bar:before, .select-bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #2F80ED;
+    transition: 0.2s ease all;
+}
+  
+.select-bar:before {
+    left: 50%;
+}
+
+.select-bar:after {
+    right: 50%;
+}
+  
+/* active state */
+.city:focus ~ .select-bar:before, .city:focus ~ .select-bar:after {
+    width: 50%;
+}
+
+.pass-chac, .clicking-agre{
+    padding-top: 5px;
+    color: #292727;
+    font-size: 14px;
+}
